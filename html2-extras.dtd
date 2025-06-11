@@ -1,0 +1,50 @@
+<!-- Custom HTML 2.0 DTD with Legacy Elements by TGU -->
+<!ENTITY % HTML.Version "-//IETF//DTD HTML 2.0 extrasbyTGUnonstandard//EN">
+
+<!ELEMENT html O O (head, body)>
+<!ELEMENT head O O (title?, base?, meta*, link*, script*, style?)>
+<!ELEMENT title - - (#PCDATA)>
+<!ELEMENT body O O (%flow;)*>
+
+<!-- Flow content -->
+<!ENTITY % flow "p | h1 | h2 | h3 | h4 | h5 | h6 | tgu | ul | ol | li | pre | div | blockquote | form | hr | table | br | marquee | blink">
+
+<!-- Existing elements -->
+<!ELEMENT p - - (#PCDATA | %inline;)*>
+<!ELEMENT h1 - - (#PCDATA | %inline;)*>
+<!ELEMENT h2 - - (#PCDATA | %inline;)*>
+<!ELEMENT h3 - - (#PCDATA | %inline;)*>
+<!ELEMENT h4 - - (#PCDATA | %inline;)*>
+<!ELEMENT h5 - - (#PCDATA | %inline;)*>
+<!ELEMENT h6 - - (#PCDATA | %inline;)*>
+<!ELEMENT tgu - - (#PCDATA | %inline;)*>
+
+<!ELEMENT br - O EMPTY>
+<!ELEMENT hr - O EMPTY>
+
+<!-- Your Legacy/Chaos Additions -->
+
+<!-- Blink tag -->
+<!ELEMENT blink - - (%inline; | #PCDATA)*>
+
+<!-- Marquee tag -->
+<!ELEMENT marquee - - (%flow; | #PCDATA)*>
+<!ATTLIST marquee
+  direction (left | right | up | down) "left"
+  behavior (scroll | slide | alternate) "scroll"
+  scrollamount CDATA #IMPLIED
+  scrolldelay CDATA #IMPLIED
+  bgcolor CDATA #IMPLIED
+  height CDATA #IMPLIED
+  width CDATA #IMPLIED>
+
+<!-- Inline elements -->
+<!ENTITY % inline "b | i | u | tt | em | strong | a | img | font | small | big | sub | sup | code | kbd | blink">
+<!ELEMENT b - - (#PCDATA | %inline;)*>
+<!ELEMENT i - - (#PCDATA | %inline;)*>
+<!ELEMENT u - - (#PCDATA | %inline;)*>
+<!ELEMENT font - - (#PCDATA | %inline;)*>
+<!ATTLIST font
+  color CDATA #IMPLIED
+  face CDATA #IMPLIED
+  size CDATA #IMPLIED>
