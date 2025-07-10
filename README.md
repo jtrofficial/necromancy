@@ -23,9 +23,6 @@ Sure well, here's the tags that are supported to date:
 ```<h1 align="">```
 ```<img align="">```
 ```<applet>```(Yes, full support - get you .class file ready)
-
-
-I coded yet never wants to work properly:
 ```<nobr>```
 
 
@@ -36,3 +33,12 @@ Nonstandard tags just to screw with Whatwg:
 ```<cf>```
 
 That should be all the tags, hopefully I didn't forget any...
+
+#Known issues
+1) Existing
+
+#Compatability
+Latest version of firefox
+Chrome canary
+Chromium(ALL ~99% of non-chrome browsers
+Lynx(Text only support)
