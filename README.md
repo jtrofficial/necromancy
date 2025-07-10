@@ -27,9 +27,9 @@ Sure well, here's the tags that are supported to date:
 
 
 Nonstandard tags just to screw with Whatwg:
-```<tgu>```
-```<tgu><sep></tgu>```
-```<tgu><g></tgu>```
+`<tgu>`
+`<tgu><sep></tgu>`
+`<tgu><g></tgu>`
 `<cf>`
 
 That should be all the tags, hopefully I didn't forget any...
