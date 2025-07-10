@@ -30,14 +30,14 @@ Nonstandard tags just to screw with Whatwg:
 ```<tgu>```
 ```<tgu><sep></tgu>```
 ```<tgu><g></tgu>```
-```<cf>```
+`<cf>`
 
 That should be all the tags, hopefully I didn't forget any...
 
-#Known issues
+# Known issues
 1) Existing
 
-#Compatability
+# Compatability
 Latest version of firefox
 Chrome canary
 Chromium(ALL ~99% of non-chrome browsers
